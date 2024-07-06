@@ -3,117 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Services</title>
+    <title>A1 IT Firm</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><i class="fas fa-laptop-code"></i> IT Services</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="company-name">A1 IT Firm</a>
+            </div>
+            <div class="nav-middle" id="nav-menu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Service</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Web Development</a>
+                        <a href="#" class="dropdown-item">SEO</a>
+                        <a href="#" class="dropdown-item">Lead Generation</a>
+                        <a href="#" class="dropdown-item">Email Marketing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button class="nav-toggle" id="nav-toggle">&#x22EE;</button>
+            </div>
+            <div><a href="#" class="nav-link">Contact</a></div>
         </div>
-    </header>
-
-    <main>
-        <section id="home">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>We provide top-notch IT services to help your business thrive in the digital world.</p>
-            </div>
-        </section>
-
-        <section id="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="services-grid">
-                    <div class="service">
-                        <i class="fas fa-code"></i>
-                        <h3>Web Development</h3>
-                        <p>Building responsive and modern websites.</p>
-                    </div>
-                    <div class="service">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Network Security</h3>
-                        <p>Protecting your business from cyber threats.</p>
-                    </div>
-                    <div class="service">
-                        <i class="fas fa-cloud"></i>
-                        <h3>Cloud Solutions</h3>
-                        <p>Scalable and efficient cloud services.</p>
-                    </div>
-                    <div class="service">
-                        <i class="fas fa-comments"></i>
-                        <h3>IT Consulting</h3>
-                        <p>Expert advice to optimize your IT strategy.</p>
-                    </div>
+    </nav>
+    <section class="company-details">
+        <div class="details-container">
+            <h1>About Our Company</h1>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <img src="https://via.placeholder.com/400" alt="Company Image">
+                </div>
+                <div class="flex-item">
+                    <p>
+                        Welcome to A1 IT Firm! We are dedicated to providing top-notch services in web development, SEO, lead generation, and email marketing. Our team of experts is committed to delivering innovative solutions to help your business grow and succeed.
+                    </p>
                 </div>
             </div>
-        </section>
-
-        <section id="team">
-            <div class="container">
-                <h2>Our Team</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="team1.jpg" alt="Team Member">
-                        <h3>John Doe</h3>
-                        <p>CEO & Founder</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="team2.jpg" alt="Team Member">
-                        <h3>Jane Smith</h3>
-                        <p>Lead Developer</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="team3.jpg" alt="Team Member">
-                        <h3>Mike Johnson</h3>
-                        <p>Network Engineer</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="team4.jpg" alt="Team Member">
-                        <h3>Emily Davis</h3>
-                        <p>Cloud Specialist</p>
-                    </div>
+        </div>
+    </section>
+    <section class="services-section">
+      <div class="container">
+          <h2>Our Services</h2>
+          <div class="services-cards">
+              <div class="service-card">
+                  <img src="service1.jpg" alt="Service 1">
+                  <h3>Web Development</h3>
+                  <p>Description of Web Development service.</p>
+              </div>
+              <div class="service-card">
+                  <img src="service2.jpg" alt="Service 2">
+                  <h3>SEO</h3>
+                  <p>Description of SEO service.</p>
+              </div>
+              <div class="service-card">
+                  <img src="service3.jpg" alt="Service 3">
+                  <h3>Lead Generation</h3>
+                  <p>Description of Lead Generation service.</p>
+              </div>
+              <div class="service-card">
+                  <img src="service4.jpg" alt="Service 4">
+                  <h3>Email Marketing</h3>
+                  <p>Description of Email Marketing service.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+    <section class="team-section">
+        <div class="team-container">
+            <div class="team-card">
+                <img src="images/Samir Ahmed Shojol.webp" alt="Team Member">
+                <h3>John Doe</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">LI</a>
+                    <a href="#" class="social-icon">Mail</a>
                 </div>
             </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit">Send</button>
-                </form>
+            <div class="team-card">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Jane Smith</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">LI</a>
+                    <a href="#" class="social-icon">Mail</a>
+                </div>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 IT Services. All rights reserved.</p>
+            <div class="team-card">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Mike Johnson</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">LI</a>
+                    <a href="#" class="social-icon">Mail</a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Emily Davis</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">LI</a>
+                    <a href="#" class="social-icon">Mail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We are dedicated to providing top-notch services in web development, SEO, lead generation, and email marketing.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="Contact#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 >Contact Us</h3>
+                <p>Email: info@A1 IT Firm.com</p>
+                <p>Phone: +123-456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 A1 IT Firm. All Rights Reserved.</p>
         </div>
     </footer>
-    
     <script src="script.js"></script>
 </body>
 </html>
