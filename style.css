@@ -12,14 +12,14 @@ body {
 
 /* Navbar styles */
 nav {
-    background-color: #317c70;
+    background-color: #333;
     color: white;
     padding: 15px 0;
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -31,11 +31,13 @@ nav {
     align-items: center;
 }
 
-.company-name {
-    font-size: 1.5em;
-    text-decoration: none;
-    color: white;
+.logo img {
+    max-width: 100%;
+    height: auto;
+    /* Optional: Set a max-height if needed */
+    max-height: 100px; /* Adjust as necessary */
 }
+
 
 .nav-middle {
     display: flex;
@@ -92,6 +94,34 @@ nav {
 }
 
 /* Company details styles */
+/* Keyframes for typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Apply typing animation to .animated-text */
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 2s steps(20, end) infinite; /* Adjust duration here */
+    white-space: nowrap; /* Prevents line breaks */
+    vertical-align: top; /* Adjust as needed */
+}
+
+/* Additional styling */
+.test-animation {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    display: inline-block; /* Ensures the whole h2 remains inline */
+    white-space: nowrap; /* Prevents line breaks */
+}
+
 .company-details {
     padding: 40px 20px;
     background-color: #f4f4f4;
@@ -179,15 +209,12 @@ nav {
 
 .social-icon {
     margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2em;
 }
 
-.social-icon:hover {
-    color: #0073e6; /* Example hover color */
+.social-icon img {
+    width: 30px; /* Adjust as needed */
+    height: auto;
 }
-
 /* Footer section styles */
 .footer-section {
     background-color: #333;
